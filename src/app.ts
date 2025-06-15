@@ -1,9 +1,11 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import morgan from 'morgan';
 
 import postsRouter from './routes/post.routes';
 import errorHandler from './middlewares/errorHandler';
 
+dotenv.config();
 
 const app = express();
 app.use(express.json());
